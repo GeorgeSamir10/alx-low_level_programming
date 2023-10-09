@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 /**
-*main - Entry point
+* main - Entry point
 *
-*Description: this is a C program that outputs sizes of various data types using printf and sizeof functions
+* Description: A C program gives sizes of data types using sizeof
 *
-*Return: Always 0 (Success)
+* Return: Always 0 (Success)
 */
 
 int main(void)
@@ -15,10 +15,11 @@ int main(void)
 	long int c;
 	long long int d;
 	float e;
-	printf("Size of a char: ", (unsigned long) sizeof(a));
-	printf("Size of an int: ", (unsigned long) sizeof(b));
-	printf("Size of a long int: ", (unsigned long) sizeof(c));
-	printf("Size of a long long int: ", (unsigned long) sizeof(d));
-	printf("Size of a float: ", (unsigned long) sizeof(e));
+
+	printf("Size of a char: %lu. \n ", (unsigned long) sizeof(a));
+	printf("Size of an int: %lu. \n ", (unsigned long) sizeof(b));
+	printf("Size of a long int: %lu. \n ", (unsigned long) sizeof(c));
+	printf("Size of a long long int: %lu. \n ", (unsigned long) sizeof(d));
+	printf("Size of a float:%lu. \n ", (unsigned long) sizeof(e));
 	return (0);
 }
