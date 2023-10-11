@@ -14,19 +14,19 @@ int main(void)
         i = 'a';
         while (i <= 'z')
         {
-            if (i == 'e')
-            {
-                i++;                    
-            }
-            else if (i == 'q')
-            {
-                i++;
-            }
-            else
-            {
-                putchar(i);
-                i++;
-            }    
+                if (i == 'e')
+                {
+                        i++;
+                }
+                else if (i == 'q')
+                {
+                        i++;
+                }
+                else
+                {
+                        putchar(i);
+                        i++;
+                }
         }
         putchar('\n');
         return (0);
