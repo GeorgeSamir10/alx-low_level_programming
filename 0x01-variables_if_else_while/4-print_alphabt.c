@@ -11,12 +11,13 @@
 int main(void)
 {
 	char i;
+
 	i = 'a';
 	while (i <= 'z')
 	{
 		if (i == 'e')
 		{
-			i++;                    
+			i++;
 		}
 		else if (i == 'q')
 		{
