@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Return: 0
+ * print_alphabet - print lowercase alphabet to stdout
  */
 
-int main(void)
+void print_alphabet(void);
 {
-	print_alphabet();
-	return (0);
+        char a;
+
+        a = 'a';
+        while (a <= 'z')
+        {
+                _putchar(a);
+                a++;
+        }
+        _putchar('\n');
 }
