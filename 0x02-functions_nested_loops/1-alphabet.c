@@ -4,7 +4,7 @@
  * print_alphabet - print lowercase alphabet to stdout
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
         char a;
 
