@@ -5,7 +5,7 @@
  *
  * Description: prints first 50 fibonacci numbers
  *
- * Returns: Always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
