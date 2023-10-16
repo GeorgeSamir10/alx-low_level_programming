@@ -1,4 +1,27 @@
 #include "main.h"
+/**
+ * numLength - returns the length of string
+ *
+ * @num: operand number
+ *
+ * Return: number of digits
+*/
+
+int numLength(int num)
+{
+	int length = 0;
+
+	if (!num)
+	{
+		return (1);
+	}
+	while (num)
+	{
+		num  = num / 10;
+		length += 1;
+	}
+	return (length);
+}
 
 /**
  * main - entry point
@@ -16,7 +39,7 @@ int main(void)
 	for (count = 1; count <= 98; count++)
 	{
 		if (f1o > 0)
-			printf("%lu", flo);
+			printf("%lu", f1o);
 		initial = numLength(mx) - 1 - numLength(f1);
 
 		while (f1o > 0 && initial > 0)
