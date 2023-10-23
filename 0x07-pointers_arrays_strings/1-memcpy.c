@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memcpy -copies memory slots to another
+ * *_memcpy - copies memory slots to another
  *
  * @dest: memory slot
  * @src: source slot
