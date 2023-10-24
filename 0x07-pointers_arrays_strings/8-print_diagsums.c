@@ -23,6 +23,6 @@ void print_diagsums(int *a, int size)
 		a += size;
 	}
 	printf("%d, ", x1);
-	printf("$d\n", x2);
+	printf("%d\n", x2);
 
 }
