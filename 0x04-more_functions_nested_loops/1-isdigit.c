@@ -9,10 +9,8 @@
  */
 int _isdigit(int c)
 {
-	int x = isdigit(c);
-
-	if (x == 0)
-		return (a);
-	else
+	if (c >= 48 && c <= 57)
 		return (1);
+	else
+		return (0);
 }
