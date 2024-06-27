@@ -1,4 +1,4 @@
-#include <ctype.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * _isdigit - A function that checks for a digit.
@@ -9,9 +9,9 @@
  */
 int _isdigit(int c)
 {
-	int a = isdigit(c);
+	int x = isdigit(c);
 
-	if (a == 0)
+	if (x == 0)
 		return (a);
 	else
 		return (1);

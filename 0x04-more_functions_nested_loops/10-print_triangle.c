@@ -8,18 +8,18 @@
  */
 void print_triangle(int size)
 {
-	int par1, par2, space, output;
+	int p1, p2, space, output;
 
-	for (par1 = 1; par1 <= size; par1++)
+	for (p1 = 1; p1 <= size; p1++)
 	{
-		space = size - par1;
+		space = size - p1;
 		output = size - space;
 
-		for (par2 = 1; par2 <= space; par2++)
+		for (p2 = 1; p2 <= space; p2++)
 		{
 			_putchar(' ');
 		}
-		for (par2 = 1; par2 <= output; par2++)
+		for (p2 = 1; p2 <= output; p2++)
 		{
 			_putchar('#');
 		}

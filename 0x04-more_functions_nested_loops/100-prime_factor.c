@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-	unsigned long num = 612852475143;
+	unsigned long number = 612852475143;
 	unsigned long factor = 2;
 
-	while (num)
+	while (number)
 	{
-		if (num / factor > 0 && num % factor == 0)
-			num /= factor;
-		else if (num / factor > 0 && num % factor != 0)
+		if (number / factor > 0 && number % factor == 0)
+			number /= factor;
+		else if (number / factor > 0 && number % factor != 0)
 			factor++;
 		else
 			break;
