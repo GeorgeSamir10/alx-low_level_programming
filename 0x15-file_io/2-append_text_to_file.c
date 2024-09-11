@@ -22,14 +22,12 @@ int append_text_to_file(const char *filename, char *text_content)
 	for (size = 0; text_content[size]; size++)
 		;
 
-	if (!text_content)
-		return (-1)
-
-	fd2 = write(fd1, text_content, size);
-
-	if (fd2 == -1)
-		return (-1);
-
+	if (text_content != NULL)
+	{
+		fd2 = write(fd1, text_content, size);
+		if (fd2 == -1)
+			return (-1);
+	}
 
 	close(fd1);
 	return (1);
