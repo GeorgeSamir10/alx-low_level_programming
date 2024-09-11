@@ -23,7 +23,8 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	size = _strlen(text_content);
+	for (size = 0; text_content[size]; size++)
+		;
 
 	fd1 = write(fd, text_content, size);
 	if (fd1 == -1)
