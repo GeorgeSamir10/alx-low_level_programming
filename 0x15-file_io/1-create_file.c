@@ -15,13 +15,10 @@ int create_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, mode);
+	fd = open(filename, O_CREAT | O_WRONLY, mode);
 
 	if (fd == -1)
-	{
-		/* perror("fails"); */
 		return (-1);
-	}
 
 	if (!text_content)
 		text_content = "";
@@ -31,10 +28,7 @@ int create_file(const char *filename, char *text_content)
 
 	fd1 = write(fd, text_content, size);
 	if (fd1 == -1)
-	{
-		/* perror("fails"); */
 		return (-1);
-	}
 
 	close(fd);
 	return (1);
