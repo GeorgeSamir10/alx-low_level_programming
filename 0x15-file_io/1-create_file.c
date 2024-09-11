@@ -12,28 +12,27 @@ int create_file(const char *filename, char *text_content)
 	int fd, fd1, size;
 	/* mode_t mode = S_IRUSR | S_IWUSR; */
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 	if (fd == -1)
 	{
-		perror("fails");
+		/* perror("fails"); */
 		return (-1);
 	}
-
-	for (size = 0; text_content[size]; size++)
-		;
 
 	if (!text_content)
 		text_content = "";
 
+	for (size = 0; text_content[size]; size++)
+		;
+
 	fd1 = write(fd, text_content, size);
 	if (fd1 == -1)
 	{
-		perror("fails");
-		close(fd);
+		/* perror("fails"); */
 		return (-1);
 	}
 
